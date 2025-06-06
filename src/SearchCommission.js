@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 
 const API = 'http://localhost:5000';
+const API = process.env.REACT_APP_API_URL;
 
 const SearchCommission = () => {
   const [filters, setFilters] = useState({ month: '', policyType: '', segment: '' });
